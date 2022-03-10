@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <style>
+         h3{
+             margin-top:15%;
+             margin-bottom: 10%;
+         }
+         h2{
+            margin-top:15%;
+             margin-bottom: 10%;
+         }
+         .wrap{
+          display: grid;
+          grid-template-rows: -webkit-max-content 1rem;
+          grid-template-rows: max-content 1rem;
+          overflow: hidden;
+          position: relative;
+          /* margin: 1rem auto; */
+          margin-left: 0%;
+          width: 20rem;
+         }
+
+         .sr-only {
+        position: absolute;
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        }
+
+        input[type=range] {
+         grid-column: 1;
+         grid-row: 2;
+        }
+        .abcd{
+            width: 75%;
+        }
+        .abc{
+            width: 50%;
+        }
+        .light{
+            display: inline-block;
+            margin-left: 0%;
+        }
+        .med{
+            display: inline-block;
+            margin-left: 21%;
+        }
+        .heavy{
+            display: inline-block;
+            margin-left: 20%;
+        }
+     </style>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="col-lg-4 first">
+        <h2>DESCRIPTION</h2>
+        <p>There's One Simple reason we all call this our everyday oxford;we wear them pretty much every single day.</p>
+        <h3>Material</h3>
+        
+        <p class="abcd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic similique numquam ea nisi minima ipsa eveniet impedit. Porro quam molestiae totam, quod adipisci temporibus facere nobis dignissimos itaque distinctio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quidem hic, dolores alias voluptatibus ab corporis et accusantium nostrum atque, ducimus saepe tenetur doloremque explicabo eligendi cupiditate expedita, quas maxime.</p>
+        <h3>GARMENT WEIGHT</h3>
+        <p class="abc">Your Daily driver.Burlier than the average button up.</p>
+        <div class="wrap" role="group" aria-labelledby="multi-lbl" style="--a: -50; --b: -30; --c: -30; --d: -30; --e: -30; --min: -50; --max: 30">
+            <div id="multi-lbl"></div>
+            <label class="sr-only" for="a">Value A:</label>
+            <input id="a" type="range" min="-50" value="-50" max="30"/>
+            <label class="sr-only" for="b">Value B:</label>
+            <input id="b" type="range" min="-50" value="-30" max="30"/>
+            <label class="sr-only" for="c">Value C:</label>
+            <input id="c" type="range" min="-50" value="-10" max="30"/>
+            <label class="sr-only" for="d">Value D:</label>
+            <input id="d" type="range" min="-50" value="10" max="30"/>
+            <label class="sr-only" for="e">Value D:</label>
+            <input id="e" type="range" min="-50" value="30" max="30"/>
+          </div>
+          <p class="light">Light</p>
+          <p class="med">Medium</p>
+          <p class="heavy">Heavy</p>
+         
+    </div>
+      <div class="col-lg-4 second">
+        <h2>SPECIFICATIONS</h2>
+        <ul>
+            <li>6-Oe.100% organic cotton.</li>
+            <li>Made frim our bearly rughy Oxford.</li>
+            <li>Our Signature Jack button down Collar</li>
+            <li>Single rounded chest pocket</li>
+            <li>Double-needle feeled construction throught.</li>
+            <li>Natural buttons</li>
+            <li>Lock-stiched buttons and buttonbodies</li>
+            <li>Shorter length to be worn untucked.</li>
+            <li>Tailored fit and high armhole.</li>
+            <li>No pleats for easy ironing and clean lines.</li>
+            <li>Wash cold and tumble dry low.</li>
+            <li>Made in China.</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 third">
+        <h2>ESSENTIAL</h2>
+        <p width:20px>This product is a Taylor Stitch Essential that we aim to always keep in stock.Essentials are our tries and true products that we wear damn near every day.If your size is currently out-of-stock,please submit your email address to the "Notify Me" tab. We restock Essentials regularly.In stock sizes are available for  immediate shipping.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
